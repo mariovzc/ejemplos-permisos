@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-faded">
+            <form class="form-inline">
+                <label for="role">tipo de usuario: &nbsp;</label>
+                <select id="role" class="form-control">
+                    <option value="1">Admin</option>
+                    <option value="2">Ventas</option>
+                    <option value="3">Contador</option>
+                </select>        
+            </form>
+        </nav>
+        <div class="container">
+            <br>
+            <div class="row data-forms">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title text-center">Crear Productos</h3>
+                            <form>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label for="exampleInputEmail1">Codigo</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1">
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="exampleInputEmail1">Nombre</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1">
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="exampleInputEmail1">Precio</label>
+                                    <input type="tel" class="form-control" id="exampleInputEmail1">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                            </form>
+                        </div> <!--card-body-->
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title text-center">Crear Cliente</h3>
+                            <form>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label for="exampleInputEmail1">Codigo</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1">
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="exampleInputEmail1">Nombre</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1">
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="exampleInputEmail1">Apellido</label>
+                                    <input type="tel" class="form-control" id="exampleInputEmail1">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="exampleInputEmail1">Direccion</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="exampleInputEmail1">Telefono</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1">
+                                </div>
+                            </div>
+                            
+                            <br>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                            </form>
+                        </div> <!--card-body-->
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row data-forms">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title text-center">Crear Factura</h3>
+                            <form>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label for="exampleInputEmail1">No. Factura</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1">
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="exampleInputEmail1">Cliente</label>
+                                    <select id="users" class="form-control">
+                                        <option value="1">Jose Nieves</option>
+                                        <option value="2">Javier Ariza</option>
+                                        <option value="3">Josue Cepeda</option>
+                                        <option value="4">Mario Vizcaino</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="exampleInputEmail1">Fecha</label>
+                                    <input type="date" class="form-control" id="exampleInputEmail1">
+                                </div>
+                            </div>
+                            <h5 class="text-center">Productos</h5>
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="productos">Producto:</label>
+                                    <select id="productos" class="form-control">
+                                        <option value="1">Cajas</option>
+                                        <option value="2">Cinta</option>
+                                        <option value="3">Corchos</option>
+                                        <option value="4">Bicicletas</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <label for="cantidad_productos">Cantidad</label>
+                                    <input type="tel" class="form-control" id="cantidad_productos" value="0">
+                                </div>
+                                <div class="col-4">
+                                    <label for="total_item">Valor a Pagar:</label>
+                                    <input type="tel" class="form-control" id="total_item" value="0">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="text-center">
+                                <button  class="btn btn-primary">+</button>                        
+                            </div>
+                            <br>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>                
+            </div>
+                <br>
+            <div class="row info-tables">
+                <div class="col-sm-5">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title text-center">Productos</h3>
+                            <table class="table table-bordered table-responsive">
+                            <thead>
+                                <tr>
+                                <th>Codigo</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th class="acciones">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Cajas</td>
+                                    <td>$1.000</td>
+                                    <td class="acciones">
+                                        <button type="button" class="btn btn-primary btn-editar">Editar</button>
+                                        <button type="button" class="btn btn-danger btn-borrar">Borrar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                <th scope="row">2</th>
+                                    <td>Cinta</td>
+                                    <td>$1.000</td>
+                                    <td class="acciones">
+                                        <button type="button" class="btn btn-primary btn-editar">Editar</button>
+                                        <button type="button" class="btn btn-danger btn-borrar">Borrar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                <th scope="row">3</th>
+                                    <td>Corchos</td>
+                                    <td>$2.000</td>
+                                    <td class="acciones">
+                                        <button type="button" class="btn btn-primary btn-editar">Editar</button>
+                                        <button type="button" class="btn btn-danger btn-borrar">Borrar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title text-center">Clientes</h3>
+                            <table class="table table-bordered table-responsive">
+                            <thead>
+                                <tr>
+                                <th>Codigo</th>
+                                <th>Nombres</th>
+                                <th>Direccion</th>
+                                <th>Telefono</th>
+                                <th class="acciones">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <th scope="row">1</th>
+                                    <td>Jose Nieves</td>
+                                    <td>calle falsa 123</td>
+                                    <td>3222222</td>
+                                    <td class="acciones">
+                                        <button type="button" class="btn btn-primary btn-editar">Editar</button>
+                                        <button type="button" class="btn btn-danger btn-borrar">Borrar</button>
+                                    </td>                            
+                                </tr>
+                                <tr>
+                                <th scope="row">2</th>
+                                    <td>Javier Ariza</td>
+                                    <td>Calle falsa 123</td>
+                                    <td>3452330</td>
+                                    <td class="acciones">
+                                        <button type="button" class="btn btn-primary btn-editar">Editar</button>
+                                        <button type="button" class="btn btn-danger btn-borrar">Borrar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                <th scope="row">3</th>
+                                    <td>Josue Cepeda</td>
+                                    <td>Calle falsa 123</td>
+                                    <td>3893230</td>
+                                    <td class="acciones">
+                                        <button type="button" class="btn btn-primary btn-editar">Editar</button>
+                                        <button type="button" class="btn btn-danger btn-borrar">Borrar</button>
+                                    </td>
+                                </tr>
+                                <th scope="row">4</th>
+                                    <td>Mario Vizcaino</td>
+                                    <td>Calle Falsa 123</td>
+                                    <td>3443230</td>
+                                    <td class="acciones">
+                                        <button type="button" class="btn btn-primary btn-editar">Editar</button>
+                                        <button type="button" class="btn btn-danger btn-borrar">Borrar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>       
+            <div class="row info-tables">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title text-center">Facturas</h3>
+                            <table class="table table-bordered table-responsive">
+                            <thead>
+                                <tr>
+                                <th>Codigo Factura</th>
+                                <th>Cliente</th>
+                                <th>Fecha</th>
+                                <th>Total</th>
+                                <th class="acciones">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <th scope="row">C-2342</th>
+                                    <td>Jose Nieves</td>
+                                    <td>32/12/2050</td>
+                                    <td>$50.000</td>
+                                    <td class="acciones">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Ver Detalle</button>
+                                        <button type="button" class="btn btn-primary btn-editar">Editar</button>
+                                        <button type="button" class="btn btn-danger btn-borrar">Borrar</button>
+                                    </td>                            
+                                </tr>
+                                <tr>
+                                <th scope="row">C-5555</th>
+                                    <td>Javier Ariza</td>
+                                    <td>01/02/2027</td>
+                                    <td>$100.000</td>
+                                    <td class="acciones">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">ver Detalle</button>
+                                        <button type="button" class="btn btn-primary btn-editar">Editar</button>
+                                        <button type="button" class="btn btn-danger btn-borrar">Borrar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Compra</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered table-responsive">
+                    <thead>
+                        <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                        <th class="acciones-modal">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">Cajas</th>
+                            <td>32</td>
+                            <td>$32.000</td>
+                            <td class="acciones-modal">
+                                <button type="button" class="btn btn-primary btn-editar">Editar</button>
+                                <button type="button" class="btn btn-danger btn-borrar">Borrar</button>
+                            </td>                            
+                        </tr>
+                        <tr>
+                        <th scope="row">Cinta</th>
+                            <td>1</td>
+                            <td>$1.000</td>
+                            <td class="acciones-modal">
+                                <button type="button" class="btn btn-primary btn-editar">Editar</button>
+                                <button type="button" class="btn btn-danger btn-borrar">Borrar</button>
+                            </td>
+                        </tr>
+                        <tr>
+
+                    </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
